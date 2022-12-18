@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-
-    @GetMapping("/home")
+	/*----------------REQUISIÇÕES GET----------------*/
+	/*-------PÚBLICAS-------*/
+    @GetMapping("/")
     public String index() {
         return "index.html";
     }
+    
     
     @GetMapping("/inscricoes")
     public String inscricoes() {
@@ -40,10 +42,15 @@ public class MainController {
     public String telaCadastroEdicao() {
         return "/admin/cadastro-edicao.html";
     }
-    
+    /*-------ORGANIZADOR-------*/
     @GetMapping("/cadastro-atividade")
     public String telaCadastroAtividade() {
-        return "/usuario/cadastro-atividade.html";
+        return "/organizador/cadastro-atividade.html";
+    }
+    
+    @GetMapping("/home-usuario")
+    public String home_usuario() {
+        return "usuario/home.html";
     }
 
 }
