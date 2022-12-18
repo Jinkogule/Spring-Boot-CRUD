@@ -26,8 +26,24 @@ public class MainController {
         return "programacao.html";
     }
     
-    @GetMapping("/cadastro")
-    public String cadastro() {
-        return "cadastro.html";
+    @GetMapping("/cadastro-usuario")
+    public String telaCadastroUsuario() {
+        return "/cadastro-usuario.html";
     }
+    
+    @GetMapping("/cadastro-evento")
+    public String telaCadastroEvento() {
+        return "/admin/cadastro-evento.html";
+    }
+    
+    @GetMapping("/cadastro-edicao")
+    public String telaCadastroEdicao() {
+        return "/admin/cadastro-edicao.html";
+    }
+    
+    @GetMapping("/cadastro-atividade")
+    public String telaCadastroAtividade() {
+        return "/usuario/cadastro-atividade.html";
+    }
+
 }
