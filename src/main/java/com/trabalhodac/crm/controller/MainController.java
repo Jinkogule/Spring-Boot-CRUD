@@ -33,24 +33,86 @@ public class MainController {
         return "/cadastro-usuario.html";
     }
     
-    @GetMapping("/cadastro-evento")
-    public String telaCadastroEvento() {
-        return "/admin/cadastro-evento.html";
+    
+    
+    
+    
+    /*-------ADMINISTRADOR-------*/
+    @GetMapping("/home-administrador")
+    public String home_administrador() {
+        return "/administrador/home.html";
     }
     
     @GetMapping("/cadastro-edicao")
     public String telaCadastroEdicao() {
         return "/admin/cadastro-edicao.html";
     }
+    
+    @GetMapping("/cadastro-evento")
+    public String telaCadastroEvento() {
+        return "/admin/cadastro-evento.html";
+    }
+    
+    @GetMapping("/edicao-evento")
+    public String telaEdicaoEvento(int id) {
+        return "/admin/edicao-evento.html";
+    }
+    
+    @GetMapping("/remocao-edicao")
+    public String telaRemocaoEdicao(int id) {
+        return "/admin/edicao-evento.html";
+    }
+    
+    @GetMapping("/remocao-evento")
+    public String telaRemocaoEvento(int id) {
+        return "/admin/remocao-evento.html";
+    }
+    
     /*-------ORGANIZADOR-------*/
+    @GetMapping("/home-organizador")
+    public String home_organizador() {
+        return "/organizador/home.html";
+    }
+    
     @GetMapping("/cadastro-atividade")
     public String telaCadastroAtividade() {
         return "/organizador/cadastro-atividade.html";
     }
     
+    @GetMapping("/cadastro-espaco")
+    public String telaCadastroEspaco() {
+        return "/organizador/cadastro-espaco.html";
+    }
+    
+    @GetMapping("/edicao-atividade")
+    public String telaEdicaoAtividade(int id) {
+        return "/organizador/edicao-atividade.html";
+    }
+    
+    @GetMapping("/edicao-edicao")
+    public String telaEdicaoEdicao(int id) {
+        return "/organizador/edicao-edicao.html";
+    }
+    
+    @GetMapping("/edicao-espaco")
+    public String telaEdicaoEspaco(int id) {
+        return "/organizador/edicao-espaco.html";
+    }
+    
+    @GetMapping("/remocao-atividade")
+    public String telaRemocaoAtividade(int id) {
+        return "/organizador/remocao-atividade.html";
+    }
+    
+    @GetMapping("/remocao-espaco")
+    public String telaRemocaoEspaco(int id) {
+        return "/organizador/remocao-espaco.html";
+    }
+    
+    /*-------USUARIO-------*/
     @GetMapping("/home-usuario")
     public String home_usuario() {
-        return "usuario/home.html";
+        return "/usuario/home.html";
     }
 
 }
