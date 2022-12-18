@@ -20,15 +20,18 @@ public class Usuario {
 	@Column
 	private String email;
 	@Column
+	private String senha;
+	@Column
 	private String nome;
 	@Column
 	private String afiliacao;
 	
-	public Usuario(String login, String email, String nome, String afiliacao) {
+	public Usuario(String login, String email, String nome, String afiliacao, String senha) {
 		super();
 		this.login = login;
 		this.email = email;
 		this.nome = nome;
+		this.senha = senha;
 		this.afiliacao = afiliacao;
 	}
 	
@@ -49,6 +52,12 @@ public class Usuario {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String email) {
+		this.senha = email;
 	}
 	public String getNome() {
 		return nome;
