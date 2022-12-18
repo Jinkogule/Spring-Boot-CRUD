@@ -25,4 +25,9 @@ public class MainController {
     public String programacao() {
         return "programacao.html";
     }
+    
+    @GetMapping("/cadastro")
+    public String cadastro() {
+        return "cadastro.html";
+    }
 }
