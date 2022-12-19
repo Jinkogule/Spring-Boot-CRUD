@@ -85,27 +85,27 @@ public class MainController {
     }
     
     @GetMapping("/edicao-atividade")
-    public String telaEdicaoAtividade(int id) {
+    public String telaEdicaoAtividade() {
         return "/organizador/edicao-atividade.html";
     }
     
     @GetMapping("/edicao-edicao")
-    public String telaEdicaoEdicao(int id) {
+    public String telaEdicaoEdicao() {
         return "/organizador/edicao-edicao.html";
     }
     
     @GetMapping("/edicao-espaco")
-    public String telaEdicaoEspaco(int id) {
+    public String telaEdicaoEspaco() {
         return "/organizador/edicao-espaco.html";
     }
     
     @GetMapping("/remocao-atividade")
-    public String telaRemocaoAtividade(int id) {
+    public String telaRemocaoAtividade() {
         return "/organizador/remocao-atividade.html";
     }
     
     @GetMapping("/remocao-espaco")
-    public String telaRemocaoEspaco(int id) {
+    public String telaRemocaoEspaco() {
         return "/organizador/remocao-espaco.html";
     }
     
