@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+  <head>
+  <intercept-url pattern="/resources*" access="permitAll" />
+  		<meta charset="UTF-8">
+       	<title>Home - Administrador</title>
+     
+     	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	
+     <style>
+     	/*----------------------------------------------------------------PRINCIPAIS----------------------------------------------------------------*/
+		body{
+		    padding-top: 50px;
+		    font-family: 'Bahnschrift' !important;
+		    font-size: 1.0rem;
+		    text-align: justify;
+		    background-color: rgb(220, 247, 255);
+		    height: 100%;
+		}
+		
+		hr { display: block; height: 1px;
+		    border: 0; border-top: 1px solid #ccc;
+		    margin: 1em 0; padding: 0;
+		}
+		
+		.container {
+		    margin: 0 auto;
+		}
+		/*----------------------------------------SCROLLBAR----------------------------------------*/
+		/* width */
+		::-webkit-scrollbar {
+		    width: 12px;
+		}
+		  
+		/* Track */
+		::-webkit-scrollbar-track {
+		    background: #f1f1f1;
+		    border-radius: 20px;
+		}
+		  
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		    background: #747BCF;
+		    border-radius: 20px;
+		}
+		  
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		    background: #5E5FC0;
+		}
+		
+		.centraliza {
+		    margin: 0;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    margin-right: -50%;
+		    transform: translate(-50%, -50%)
+		}
+		
+		.card{
+		    background-color: #747BCF;
+		    border: none;
+		    text-align: left !important;
+		    margin-bottom: 5px;
+		    margin-top: 5px !important;
+		}
+		.engrenagem{
+		    color:#555555;
+		    position: absolute;
+		    top: 10px;
+		    right: 10px;
+		}
+		/*card header*/
+		.card-header{
+		    text-align: center;
+		    background-color: #5E5FC0;
+		
+		}
+		
+		.text-shadow{
+		    text-shadow: 2px 0 0 rgb(0, 0, 0);
+		    color: #fff;
+		}
+		
+		.container-menu {
+		    width: 100% !important;          
+		} 
+		
+		/*--------navbar--------*/
+		.navbar1{
+		    background-color: #1F519B;
+		    height: 50px;
+		
+		}
+		
+		.navbar2 {
+		    height: 45px;
+		    margin-top: 56px;
+		    background-color: #747BCF;
+		    padding: 0;
+		}
+		
+		.navbar-vazio{
+		    height: 55px;
+		}
+		
+		.navbar-brand{
+		    color: white;
+		    font-size: 2rem;
+		}
+		
+		.navbar-brand-dashboard{
+		    color: white;
+		    font-size: 1rem;
+		}
+		
+		.menu-brand {
+		    transform: translateX(-50%);
+		    left: 50%;
+		    position: absolute;
+		} 
+		
+		.navbar-brand:hover{
+		    color: rgb(179, 179, 179);
+		}
+		
+		h4{
+		    color: #fff;
+		}
+		
+		/*--------footer--------*/
+		.page-footer{
+		    background-color: #44832d;
+		}
+		.text-center{
+		    color: white;
+		}
+
+		/*----------------------------------------LOGIN / CADASTRO----------------------------------------*/
+		@media (min-width: 1000px) {
+		    .container-login{
+		        float: center;
+		        width: 400px;
+		        height: 300px;
+		        background-color: #1F519B;
+		        margin: 50px auto;
+		        border-radius: 10px;
+		    }
+		}
+		
+		@media (max-width: 1000px) {
+		    .container-evento{
+		        float: center;
+		        width: 95%;
+		        height: 300px;
+		        background-color: #1F519B;
+		        margin: 50px auto;
+		        border-radius: 10px;
+		    }
+		}
+		@media (min-width: 1000px) {
+		    .container-cadastro{
+		        float: center;
+		        background-color: #1F519B;
+		        border-radius: 10px;
+		        width: 500px;
+		        margin: 50px auto;
+		    }
+		}
+		
+		@media (max-width: 1000px) {
+		    .container-cadastro{
+		        float: center;
+		        background-color: #1F519B;
+		        border-radius: 10px;
+		        width: 95%;
+		        margin: 50px auto;
+		    }
+		}
+
+
+		.nav-link{
+		    color: #fff;
+		    text-align: center;
+		}
+		.nav-link:hover{
+		    color: rgb(155, 155, 155);
+		    text-align: center;
+		}
+
+		.espaço {
+		    line-height: 15px;  
+		    margin: 15px 0;
+		}
+
+		/*--------dashboard usuário--------*/
+		.centralizar{
+		    text-align: center;
+		}
+
+		.text-divider{
+		    text-align: center;
+		    font-size: 1.1rem !important;
+		}
+		footer {
+		    bottom: 0;
+		    width: 100%;
+		    background-color: green;
+		}
+     </style>
+  </head>
+  <body>
+      	<nav class="navbar navbar1 navbar-expand-md fixed-top">
+		    <div class="container-fluid container-menu" style="position: relative;">
+		        <!-- Brand -->
+		        <a class="navbar-brand navbar-brand-dashboard logo" href="/home-administrador">  
+		            Home
+		        <!-- Brand -->
+		        </a>  
+		        
+		        <h4 class="bem-vindo centraliza">Sociedade Brasileira de Computação - Administrador</h4>
+		       
+		        <a class="nav-link" href="" style="color: #fff !important;">Sair</a>
+		    </div>
+		</nav>
+		
+		<div class="container container-cadastro mb-4">
+			<br><h4 style="text-align: center;">Evento X</h4>
+       		<hr><h4>Cadastrar</h4><hr>
+            <a href="/cadastro-edicao" class="btn btn-primary btn mb-2">Cadastrar Edição</a>
+            <a href="/cadastro-evento" class="btn btn-primary btn mb-2">Cadastrar Evento</a>
+            
+            <hr><h4>Editar</h4><hr>
+            <a href="/edicao-evento" class="btn btn-primary btn mb-2">Editar Evento</a>
+            
+            <hr><h4>Excluir</h4><hr>
+            <a href="/remocao-edicao" class="btn btn-primary btn mb-2">Excluir Edição</a>
+            <a href="/remocao-evento" class="btn btn-primary btn mb-2">Excluir Evento</a>
+            
+            <hr><h4>Outros</h4><hr>
+            <a href="/atribuir-organizador" class="btn btn-primary btn mb-2">Atribuir Organizador</a>
+        </div>
+        
+		<footer>
+			<div style="position: relative" class="centralizar">
+				<span class="navbar-brand mb-0 h1">DAC - 2022</span>
+			</div>
+		</footer>
+   </body>
+</html>

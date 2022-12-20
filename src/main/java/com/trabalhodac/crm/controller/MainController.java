@@ -23,11 +23,7 @@ public class MainController {
         return "chamada.html";
     }
     
-    @GetMapping("/programacao")
-    public String programacao() {
-        return "programacao.html";
-    }
-    
+   
     @GetMapping("/cadastro-usuario")
     public String telaCadastroUsuario() {
         return "/cadastro-usuario.html";
@@ -40,7 +36,7 @@ public class MainController {
     /*-------ADMINISTRADOR-------*/
     @GetMapping("/home-administrador")
     public String home_administrador() {
-        return "/administrador/home.html";
+        return "/admin/home.html";
     }
     
     @GetMapping("/cadastro-edicao")
@@ -115,4 +111,14 @@ public class MainController {
         return "/usuario/home.html";
     }
 
+    @GetMapping("/programacao")
+    public String programacao() {
+        return "/usuario/programacao.html";
+    }
+    
+    @GetMapping("/detalhes-atividade")
+    public String detalhes_atividade() {
+        return "/usuario/detalhes-atividade.html";
+    }
+    
 }
