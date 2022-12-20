@@ -3,6 +3,9 @@ package com.trabalhodac.crm.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -38,6 +41,12 @@ public class UsuarioController {
 	@PutMapping("/editaUsuario/{id}")
 	public Usuario editaUsuario(@PathVariable int id, @RequestBody Usuario usuario){
 		return service.editaUsuario(usuario, id);
+	}
+	
+	@DeleteMapping("/removeUsuario/{id}")
+	public ResponseEntity<String> removeUsuario(@PathVariable int id){
+		service.removeUsuario(id);
+		return new ResponseEntity<String>("Usuário removido com sucesso!", HttpStatus.OK);
 	}
 
 

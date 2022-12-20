@@ -26,7 +26,6 @@ public class UsuarioServiceImplementation implements UsuarioService {
 		return repositorio.findById(id).orElse(null);
 	}
 
-
 	public Usuario editaUsuario(Usuario usuario, int id) {
 		Usuario usuarioAntigo = repositorio.findById(id).orElse(null);
 		
@@ -40,6 +39,10 @@ public class UsuarioServiceImplementation implements UsuarioService {
 		repositorio.save(usuarioAntigo);
 		
 		return usuarioAntigo; 
+	}
+
+	public void removeUsuario(int id) {
+		repositorio.deleteById(id);	
 	}
 
 }
