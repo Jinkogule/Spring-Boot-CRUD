@@ -26,6 +26,10 @@ public class Usuario {
 	@Column
 	private String afiliacao;
 	
+	public Usuario() {
+		super();
+	}
+	
 	public Usuario(String login, String email, String nome, String afiliacao, String senha) {
 		super();
 		this.login = login;

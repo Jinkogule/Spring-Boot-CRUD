@@ -1,5 +1,7 @@
 package com.trabalhodac.crm.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.trabalhodac.crm.model.Usuario;
@@ -8,4 +10,5 @@ import com.trabalhodac.crm.model.Usuario;
 public interface UsuarioService {
 	//Create
 	public Usuario criaUsuario(Usuario usuario);
+	public List<Usuario> getUsuarios();
 }
