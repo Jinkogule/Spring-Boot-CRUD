@@ -22,6 +22,10 @@ public class Espaco {
 	@Column
 	private int capacidade;
 	
+	public Espaco() {
+		super();
+	}
+	
 	public Espaco(String nome, String localizacao, int capacidade, String recursos) {
 		super();
 		this.nome = nome;
