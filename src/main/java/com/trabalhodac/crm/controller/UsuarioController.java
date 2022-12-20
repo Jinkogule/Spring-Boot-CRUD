@@ -24,7 +24,7 @@ public class UsuarioController {
 	@Autowired
 	UsuarioService service;
 	@PostMapping("/criaUsuario")
-	public String criaUsuario(Usuario usuario) {
+	public String criaUsuario(@RequestBody Usuario usuario) {
 		service.criaUsuario(usuario);
 		return "cadastro-sucesso.html";
 	}
