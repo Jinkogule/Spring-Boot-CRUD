@@ -21,4 +21,9 @@ public class UsuarioServiceImplementation implements UsuarioService {
 		return repositorio.findAll();
 	}
 
+	
+	public Usuario getUsuario(int id) {
+		return repositorio.findById(id).orElse(null);
+	}
+
 }
