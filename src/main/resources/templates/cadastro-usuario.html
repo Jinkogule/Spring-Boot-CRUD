@@ -204,6 +204,7 @@
 		    font-size: 1.1rem !important;
 		}
 		footer {
+			position: fixed;
 		    bottom: 0;
 		    width: 100%;
 		    background-color: green;
@@ -214,38 +215,40 @@
       	<nav class="navbar navbar1 navbar-expand-md fixed-top">
 		    <div class="container-fluid container-menu" style="position: relative;">
 		        <!-- Brand -->
-		        <a class="navbar-brand navbar-brand-dashboard logo" href="/dashboard">  
-		            
+		        <a class="navbar-brand navbar-brand-dashboard logo" href="/">  
+		            Página Inicial
 		        <!-- Brand -->
 		        </a>  
 		        
 		        <h4 class="bem-vindo centraliza">Sociedade Brasileira de Computação</h4>
 		       
-		        <a class="nav-link" href="/chamada" style="color: #fff !important;">Cadastre-se</a>
 		    </div>
 		</nav>
 		
 		<div class="container container-cadastro mb-4">
             <br><h4 style="text-align: center;">Cadastro de Usuário</h4><hr>
-            <form action="" method="POST">
+            <form method="POST"
+            role="form"
+            th:action="@{/usuario/criaUsuario}"
+            th:object="${usuario}">
                 <div class="row mb-1">
                     <div class="col">
                         <label for="nome" style="color: #fff;">Nome:</label>
-                        <input type="text" placeholder="Nome" id="nome" class="form-control" name="nome" maxlength="100" required autofocus>                     
+                        <input th:field="*{nome}" type="text" placeholder="Nome" id="nome" class="form-control" name="nome" maxlength="100" required autofocus>                     
                     </div>
                     <div class="col">
                         <label for="login" style="color: #fff;">Login:</label>
-                        <input type="text" placeholder="Login" id="login" class="form-control" name="login" maxlength="100" required autofocus>
+                        <input th:field="*{login}" type="text" placeholder="Login" id="login" class="form-control" name="login" maxlength="100" required autofocus>
                     </div>
                 </div>
   
                 <div class="form-group mb-1">
                     <label for="email" style="color: #fff;">E-mail:</label>
-                    <input type="text" placeholder="E-mail" id="email" class="form-control"name="email" maxlength="100" required autofocus>
+                    <input th:field="*{email}" type="text" placeholder="E-mail" id="email" class="form-control"name="email" maxlength="100" required autofocus>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="password" style="color: #fff;">Senha:</label>
-                    <input type="password" placeholder="Senha" id="password" class="form-control" name="password" maxlength="20" minlength="3" required>
+                    <label for="senha" style="color: #fff;">Senha:</label>
+                    <input th:field="*{senha}" type="password" placeholder="Senha" id="senha" class="form-control" name="senha" maxlength="20" minlength="3" required>
                     <small id="emailHelp" style="color: #E0E0E0 !important;" class="form-text text-muted">Obs.: mínimo de 3 e máximo de 20 caracteres.</small>
                     
                 </div>
@@ -253,7 +256,7 @@
                 <div class="row mb-3">
                     <div class="col">
                         <label for="afiliacao" style="color: #fff;">Afiliação:</label>
-                        <input type="text" placeholder="afiliação" id="afiliacao" class="form-control" name="afiliacao" required>
+                        <input th:field="*{afiliacao}" type="text" placeholder="afiliação" id="afiliacao" class="form-control" name="afiliacao" required>
                     </div>
 				</div>
                 <div class="d-grid mx-auto mb-2">

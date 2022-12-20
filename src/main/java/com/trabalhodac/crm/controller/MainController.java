@@ -1,7 +1,11 @@
 package com.trabalhodac.crm.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.trabalhodac.crm.model.Usuario;
+
 
 @Controller
 public class MainController {
@@ -13,19 +17,12 @@ public class MainController {
     }
     
     
-    @GetMapping("/inscricoes")
-    public String inscricoes() {
-        return "inscricoes.html";
-    }
     
-    @GetMapping("/chamada")
-    public String chamada() {
-        return "chamada.html";
-    }
     
    
     @GetMapping("/cadastro-usuario")
-    public String telaCadastroUsuario() {
+    public String telaCadastroUsuario(Model model) {
+    	model.addAttribute("usuario", new Usuario());
         return "/cadastro-usuario.html";
     }
     
@@ -115,6 +112,22 @@ public class MainController {
     public String programacao() {
         return "/usuario/programacao.html";
     }
+    
+    @GetMapping("/inscricoes")
+    public String inscricoes() {
+        return "/usuario/inscricoes.html";
+    }
+    
+    @GetMapping("/chamada")
+    public String chamada() {
+        return "/usuario/chamada.html";
+    }
+    
+    @GetMapping("/organizacao")
+    public String organizacao() {
+        return "/usuario/organizacao.html";
+    }
+    
     
     @GetMapping("/detalhes-atividade")
     public String detalhes_atividade() {
