@@ -6,6 +6,4 @@ import com.trabalhodac.crm.model.Usuario;
 
 public interface UsuarioRepositorio extends JpaRepository<Usuario, Integer> {
 
-	
-
 }

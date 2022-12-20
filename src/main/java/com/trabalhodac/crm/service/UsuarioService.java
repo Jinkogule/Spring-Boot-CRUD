@@ -12,4 +12,5 @@ public interface UsuarioService {
 	public Usuario criaUsuario(Usuario usuario);
 	public List<Usuario> getUsuarios();
 	public Usuario getUsuario(int id);
+	public Usuario editaUsuario(Usuario usuario, int id);
 }

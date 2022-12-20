@@ -26,4 +26,20 @@ public class UsuarioServiceImplementation implements UsuarioService {
 		return repositorio.findById(id).orElse(null);
 	}
 
+
+	public Usuario editaUsuario(Usuario usuario, int id) {
+		Usuario usuarioAntigo = repositorio.findById(id).orElse(null);
+		
+		usuarioAntigo.setId(usuario.getId());
+		usuarioAntigo.setNome(usuario.getNome());
+		usuarioAntigo.setLogin(usuario.getLogin());
+		usuarioAntigo.setEmail(usuario.getEmail());
+		usuarioAntigo.setSenha(usuario.getSenha());
+		usuarioAntigo.setAfiliacao(usuario.getAfiliacao());
+		
+		repositorio.save(usuarioAntigo);
+		
+		return usuarioAntigo; 
+	}
+
 }
