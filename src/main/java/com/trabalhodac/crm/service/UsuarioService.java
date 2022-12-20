@@ -8,7 +8,6 @@ import com.trabalhodac.crm.model.Usuario;
 
 @Service
 public interface UsuarioService {
-	//Create
 	public Usuario criaUsuario(Usuario usuario);
 	public List<Usuario> getUsuarios();
 	public Usuario getUsuario(int id);

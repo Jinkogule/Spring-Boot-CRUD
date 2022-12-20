@@ -22,6 +22,10 @@ public class Evento {
 	@Column
 	private String descricao;
 	
+	public Evento() {
+		super();
+	}
+	
 	public Evento(String nome, String sigla, String descricao) {
 		super();
 		this.nome = nome;

@@ -28,6 +28,10 @@ public class Atividade {
 	@Column
 	private String horario_final;
 	
+	public Atividade() {
+		super();
+	}
+	
 	public Atividade(String nome, String tipo, String descricao, String data, String horario_inicial, String horario_final) {
 		super();
 		this.nome = nome;

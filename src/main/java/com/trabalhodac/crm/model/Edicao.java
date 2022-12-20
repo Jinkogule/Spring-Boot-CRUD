@@ -26,6 +26,10 @@ public class Edicao {
 	@Column
 	private String cidade;
 	
+	public Edicao() {
+		super();
+	}
+	
 	public Edicao(int numero, int ano, String data_inicial, String data_final, String cidade) {
 		super();
 		this.numero = numero;
