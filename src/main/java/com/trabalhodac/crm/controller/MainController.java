@@ -15,21 +15,13 @@ public class MainController {
     public String index() {
         return "index.html";
     }
-    
-    
-    
-    
-   
+
     @GetMapping("/cadastro-usuario")
     public String telaCadastroUsuario(Model model) {
     	model.addAttribute("usuario", new Usuario());
         return "/cadastro-usuario.html";
     }
-    
-    
-    
-    
-    
+
     /*-------ADMINISTRADOR-------*/
     @GetMapping("/home-administrador")
     public String home_administrador() {
@@ -47,18 +39,23 @@ public class MainController {
     }
     
     @GetMapping("/edicao-evento")
-    public String telaEdicaoEvento(int id) {
+    public String telaEdicaoEvento() {
         return "/admin/edicao-evento.html";
     }
     
     @GetMapping("/remocao-edicao")
-    public String telaRemocaoEdicao(int id) {
-        return "/admin/edicao-evento.html";
+    public String telaRemocaoEdicao() {
+        return "/admin/remocao-edicao.html";
     }
     
     @GetMapping("/remocao-evento")
-    public String telaRemocaoEvento(int id) {
+    public String telaRemocaoEvento() {
         return "/admin/remocao-evento.html";
+    }
+    
+    @GetMapping("/atribuicao-organizador")
+    public String telaAtribuicaoOrganizador() {
+        return "/admin/atribuicao-organizador.html";
     }
     
     /*-------ORGANIZADOR-------*/
@@ -100,6 +97,16 @@ public class MainController {
     @GetMapping("/remocao-espaco")
     public String telaRemocaoEspaco() {
         return "/organizador/remocao-espaco.html";
+    }
+    
+    @GetMapping("/insercao-chamada")
+    public String telaInsercaoChamada() {
+        return "/organizador/insercao-chamada.html";
+    }
+    
+    @GetMapping("/insercao-inscricao")
+    public String telaInsercaoInscricao() {
+        return "/organizador/insercao-inscricao.html";
     }
     
     /*-------USUARIO-------*/

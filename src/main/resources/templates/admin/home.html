@@ -205,6 +205,7 @@
 		    font-size: 1.1rem !important;
 		}
 		footer {
+			position: fixed;
 		    bottom: 0;
 		    width: 100%;
 		    background-color: green;
@@ -222,27 +223,77 @@
 		        
 		        <h4 class="bem-vindo centraliza">Sociedade Brasileira de Computação - Administrador</h4>
 		       
-		        <a class="nav-link" href="" style="color: #fff !important;">Sair</a>
+		        <a class="nav-link" href="/" style="color: #fff !important;">Sair</a>
 		    </div>
 		</nav>
 		
 		<div class="container container-cadastro mb-4">
-			<br><h4 style="text-align: center;">Evento X</h4>
-       		<hr><h4>Cadastrar</h4><hr>
-            <a href="/cadastro-edicao" class="btn btn-primary btn mb-2">Cadastrar Edição</a>
-            <a href="/cadastro-evento" class="btn btn-primary btn mb-2">Cadastrar Evento</a>
+			<br><h4 style="text-align: center;">Operações de evento</h4>
+			<div class="d-flex flex-row justify-content-center align-items-center">
+				<vl>
+                <a href="/cadastro-evento" class="btn btn-primary btn mb-2">Cadastrar Evento</a>
+                <vl>
+                <a href="/edicao-evento" class="btn btn-primary btn mb-2">Editar Evento</a>
+                <vl>
+                <a href="/remocao-evento" class="btn btn-primary btn mb-2">Excluir Evento</a>
+                <vl>
+            </div>
             
-            <hr><h4>Editar</h4><hr>
-            <a href="/edicao-evento" class="btn btn-primary btn mb-2">Editar Evento</a>
-            
-            <hr><h4>Excluir</h4><hr>
-            <a href="/remocao-edicao" class="btn btn-primary btn mb-2">Excluir Edição</a>
-            <a href="/remocao-evento" class="btn btn-primary btn mb-2">Excluir Evento</a>
-            
-            <hr><h4>Outros</h4><hr>
-            <a href="/atribuir-organizador" class="btn btn-primary btn mb-2">Atribuir Organizador</a>
         </div>
         
+        <hr style="height: 10px;">
+        
+		<div class="container container-cadastro mb-4">
+			<br><h4 style="text-align: center;">Evento 1 - {Nome do evento}</h4>
+       		<hr>
+       		<div class="d-flex flex-row justify-content-center align-items-center">
+				<a href="/atribuicao-organizador" class="btn btn-primary btn mb-2">Atribuir Organizador</a>
+            </div>
+            
+            <hr>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+            	<vl>
+            	<a href="/cadastro-edicao" class="btn btn-primary btn mb-2">Cadastrar Edição</a>
+            	<vl>
+				<a href="/remocao-edicao" class="btn btn-primary btn mb-2">Excluir Edição</a>
+				<vl>
+            </div>
+        </div>
+        
+        <div class="container container-cadastro mb-4">
+			<br><h4 style="text-align: center;">Evento 2- {Nome do evento}</h4>
+       		<hr>
+       		<div class="d-flex flex-row justify-content-center align-items-center">
+				<a href="/atribuicao-organizador" class="btn btn-primary btn mb-2">Atribuir Organizador</a>
+            </div>
+            
+            <hr>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+            	<vl>
+            	<a href="/cadastro-edicao" class="btn btn-primary btn mb-2">Cadastrar Edição</a>
+            	<vl>
+				<a href="/remocao-edicao" class="btn btn-primary btn mb-2">Excluir Edição</a>
+				<vl>
+            </div>
+        </div>
+        
+        <div class="container container-cadastro mb-4">
+			<br><h4 style="text-align: center;">Evento 3 - {Nome do evento}</h4>
+       		<hr>
+       		<div class="d-flex flex-row justify-content-center align-items-center">
+				<a href="/atribuicao-organizador" class="btn btn-primary btn mb-2">Atribuir Organizador</a>
+            </div>
+            
+            <hr>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+            	<vl>
+            	<a href="/cadastro-edicao" class="btn btn-primary btn mb-2">Cadastrar Edição</a>
+            	<vl>
+				<a href="/remocao-edicao" class="btn btn-primary btn mb-2">Excluir Edição</a>
+				<vl>
+            </div>
+        </div>
+        <br><br><br><br>
 		<footer>
 			<div style="position: relative" class="centralizar">
 				<span class="navbar-brand mb-0 h1">DAC - 2022</span>

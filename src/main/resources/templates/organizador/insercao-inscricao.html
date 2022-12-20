@@ -3,7 +3,7 @@
   <head>
   <intercept-url pattern="/resources*" access="permitAll" />
   		<meta charset="UTF-8">
-       	<title>Programação</title>
+       	<title>Inserir Inscrição</title>
      
      	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -205,14 +205,10 @@
 		    font-size: 1.1rem !important;
 		}
 		footer {
-		position: fixed;
+			position: fixed;
 		    bottom: 0;
 		    width: 100%;
 		    background-color: green;
-		}
-		table{
-			background-color: #F0F0F0;
-			border-radius: 20px;
 		}
      </style>
   </head>
@@ -220,62 +216,36 @@
       	<nav class="navbar navbar1 navbar-expand-md fixed-top">
 		    <div class="container-fluid container-menu" style="position: relative;">
 		        <!-- Brand -->
-		        <a class="navbar-brand navbar-brand-dashboard logo" href="/home-usuario">  
+		        <a class="navbar-brand navbar-brand-dashboard logo" href="/home-organizador">  
 		            Home
 		        <!-- Brand -->
 		        </a>  
 		        
-		        <h4 class="bem-vindo centraliza">Sociedade Brasileira de Computação - Usuário</h4>
+		        <h4 class="bem-vindo centraliza">Sociedade Brasileira de Computação - Organizador</h4>
 		       
 		        <a class="nav-link" href="/" style="color: #fff !important;">Sair</a>
 		    </div>
 		</nav>
 		
-		<div class="container mb-4 mt-2" style="width: 900px;">
-			<div style="position: relative; height: 50px;">
-		 		<h4 class="centraliza" style="color: #000;">Atividades do evento - {Nome do evento}</h4>
-		    </div>
-			
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Nome</th>
-      <th scope="col">Link</th>
-      <th scope="col">Favoritar atividade</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Atividade 1</th>
-      <td>Nome atividade 1</td>
-      <td><a href="/detalhes-atividade">/evento(?)/atividade1</a></td>
-      <td>
-      	<input type = "checkbox" id = "subscribeNews" name = "subscribe" value = "newsletter">
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Atividade 2</th>
-      <td>Nome atividade 2</td>
-      <td><a href="/detalhes-atividade">/evento(?)/atividade2</a></td>
-      <td>
-      	<input type = "checkbox" id = "subscribeNews" name = "subscribe" value = "newsletter">
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Atividade 3</th>
-      <td>Nome atividade 3</td>
-      <td><a href="/detalhes-atividade">/evento(?)/atividade3</a></td>
-      <td>
-      	<input type = "checkbox" id = "subscribeNews" name = "subscribe" value = "newsletter">
-      </td>
-      
-      
-    </tr>
-  </tbody>
-</table>
-            
-        </div>
+		<div class="container container-cadastro mb-4">
+			<br><h4 style="text-align: center;">Inserir informações sobre inscrição - {Nome do evento}</h4>
+       		<hr>
+       		<form action="" method="POST">
+                <div class="row mb-1">
+                    <div class="col">
+                        <label for="nome" style="color: #fff;">Informações sobre chamada do evento:</label>
+                        <textarea rows="5" cols="54" id="TITLE">
+</textarea>                     
+                    </div>
+                    
+                </div>
+  
+     
+                <div class="d-grid mx-auto pb-3 mt-3">
+                    <button type="submit" class="btn btn-success btn-block">Enviar</button>
+                </div>
+       
+            </form>
         
 		<footer>
 			<div style="position: relative" class="centralizar">

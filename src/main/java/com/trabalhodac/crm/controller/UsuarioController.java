@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.trabalhodac.crm.model.Usuario;
 import com.trabalhodac.crm.service.UsuarioService;
 
@@ -24,7 +23,7 @@ public class UsuarioController {
 	@Autowired
 	UsuarioService service;
 	@PostMapping("/criaUsuario")
-	public String criaUsuario(@RequestBody Usuario usuario) {
+	public String criaUsuario(Usuario usuario) {
 		service.criaUsuario(usuario);
 		return "cadastro-sucesso.html";
 	}
