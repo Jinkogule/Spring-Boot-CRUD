@@ -1,6 +1,6 @@
 # Spring Boot CRUD
 
-[![License](https://img.shields.io/github/license/Jinkogule/BandejApp?style=for-the-badge)](LICENSE)<br>
+[![License](https://img.shields.io/github/license/Jinkogule/Spring-Boot-CRUD?style=for-the-badge)](LICENSE)<br>
 ![Status](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO%20-brightgreen?style=for-the-badge)
 </div>
 
@@ -17,11 +17,11 @@
 
 ## 💻 Sobre o projeto
 
-O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmico para a disciplina de Desenvolvimento de Aplicações Corporativas. Este projeto utiliza o framework Spring Boot para implementar uma API RESTful que realiza operações CRUD, baseado em um cenário fictício conforme descrito no [enunciado do trabalho](https://github.com/Jinkogule/Spring-Boot-CRUD/tree/main/src/main/resources/documents/Trabalho_em_grupo.pdf).
+O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmico para a disciplina de Desenvolvimento de Aplicações Corporativas. Este projeto utiliza o framework Spring Boot para implementar uma API RESTful que realiza operações CRUD, baseado em um cenário fictício conforme descrito no [enunciado do trabalho](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/Trabalho_em_grupo.pdf).
 
 ## 📋 Documentação
 
--   **[Enunciado do trabalho](https://github.com/Jinkogule/Spring-Boot-CRUD/tree/main/src/main/resources/documents/Trabalho_em_grupo.pdf)**
+-   **[Enunciado do trabalho](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/Trabalho_em_grupo.pdf)**
 -   **[Wiki](https://github.com/Jinkogule/Spring-Boot-CRUD/wiki)**
 
 ## 🧑🏻‍💻 Desenvolvimento
@@ -45,7 +45,7 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 #### **Utilitários**
 
--   Teste de API:  **[Postman](https://www.postman.com/)**
+-   Teste de API: **[Postman](https://www.postman.com/)**
 
 ## 📝 Autores
 
