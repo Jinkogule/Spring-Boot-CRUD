@@ -1,0 +1,646 @@
+{
+	"info": {
+		"_postman_id": "461027c1-457e-49b4-8b3c-fa9dabf9a32b",
+		"name": "trabalhodac",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24972624"
+	},
+	"item": [
+		{
+			"name": "createAtividade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Assistir Palestra\",\r\n    \"tipo\": \"Palestra\",\r\n    \"descricao\":\"Assistir Palestra do Alan Turing\",\r\n    \"data\": \"14/04/1942\",\r\n    \"horario_inicial\": \"12h\",\r\n    \"horario_final\": \"18h\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/atividade/criaAtividade",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atividade",
+						"criaAtividade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readAtividade",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Assistir Palestra\",\r\n    \"tipo\": \"Palestra\",\r\n    \"descricao\":\"Assistir Palestra do Alan Turing\",\r\n    \"data\": \"14/04/1942\",\r\n    \"horario_inicial\": \"12h\",\r\n    \"horario_final\": \"18h\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/atividade/getAtividade/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atividade",
+						"getAtividade",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readAtividades",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Assistir Palestra\",\r\n    \"tipo\": \"Palestra\",\r\n    \"descricao\":\"Assistir Palestra do Alan Turing\",\r\n    \"data\": \"14/04/1942\",\r\n    \"horario_inicial\": \"12h\",\r\n    \"horario_final\": \"18h\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/atividade/getAtividades",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atividade",
+						"getAtividades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAtividade",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Assistir Palestra\",\r\n    \"tipo\": \"Palestra\",\r\n    \"descricao\":\"Assistir Palestra do Einstein\",\r\n    \"data\": \"23/08/1943\",\r\n    \"horario_inicial\": \"16h\",\r\n    \"horario_final\": \"20h\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/atividade/editaAtividade/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atividade",
+						"editaAtividade",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAtividade",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/atividade/removeAtividade/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"atividade",
+						"removeAtividade",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEdicao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ano\": 2023,\r\n    \"cidade\": \"Rio de Janeiro\",\r\n    \"data_inicial\": \"04/11/2023\",\r\n    \"data_final\": \"04/12/2023\",\r\n    \"numero\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edicao/criaEdicao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edicao",
+						"criaEdicao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEdicao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/edicao/getEdicao/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edicao",
+						"getEdicao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEdicoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/edicao/getEdicoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edicao",
+						"getEdicoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEdicao",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"ano\": 2023,\r\n    \"cidade\": \"Niterói\",\r\n    \"data_inicial\": \"01/11/2023\",\r\n    \"data_final\": \"02/12/2023\",\r\n    \"numero\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edicao/editaEdicao/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edicao",
+						"editaEdicao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEdicao",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/edicao/removeEdicao/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edicao",
+						"removeEdicao",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEspaco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Instituto de Ceomputação\",\r\n    \"localizacao\": \"Praia Vermelha\",\r\n    \"capacidade\": \"2000\",\r\n    \"recursos\": \"10000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/espaco/criaEspaco",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"espaco",
+						"criaEspaco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEspaco",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/espaco/getEspaco/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"espaco",
+						"getEspaco",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEspacos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/espaco/getEspacos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"espaco",
+						"getEspacos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEspaco",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Instituto de Geofísica\",\r\n    \"localizacao\": \"Praia Vermelha\",\r\n    \"capacidade\": \"1500\",\r\n    \"recursos\": \"5000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/espaco/editaEspaco/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"espaco",
+						"editaEspaco",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEspaco",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/espaco/deleteEspaco/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"espaco",
+						"deleteEspaco",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEvento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Rock in Rio\",\r\n    \"descricao\": \"Festival de música\",\r\n    \"sigla\": \"RIR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/evento/criaEvento",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"evento",
+						"criaEvento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEvento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Rock in Rio\",\r\n    \"descricao\": \"Festival de música\",\r\n    \"sigla\": \"RIR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/evento/getEvento/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"evento",
+						"getEvento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readEventos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/evento/getEventos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"evento",
+						"getEventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEvento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Lollapalooza\",\r\n    \"descricao\": \"Festival de música\",\r\n    \"sigla\": \"LPL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/evento/editaEvento/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"evento",
+						"editaEvento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEvento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/evento/removeEvento/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"evento",
+						"removeEvento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Maria\",\r\n    \"login\": \"Maria123\",\r\n    \"email\": \"maria123@gmail.com\",\r\n    \"senha\": \"12345\",\r\n    \"afiliacao\": \"Usuario\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuario/criaUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"criaUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readUsuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuario/getUsuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"getUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readUsuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Maria\",\r\n    \"login\": \"Maria123\",\r\n    \"email\": \"maria123@gmail.com\",\r\n    \"senha\": \"12345\",\r\n    \"afiliacao\": \"Usuário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuario/getUsuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"getUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Lucas\",\r\n    \"login\": \"Lucas123\",\r\n    \"email\": \"lucas123@gmail.com\",\r\n    \"senha\": \"12345\",\r\n    \"afiliacao\": \"Usuário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuario/editaUsuario/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"editaUsuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUsuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Lucas\",\r\n    \"login\": \"Lucas123\",\r\n    \"email\": \"lucas123@gmail.com\",\r\n    \"senha\": \"12345\",\r\n    \"afiliacao\": \"Usuário\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuario/removeUsuario/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"removeUsuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

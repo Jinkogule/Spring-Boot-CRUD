@@ -1,7 +1,9 @@
 # Spring Boot CRUD
 
+<div align="center">
+
 [![License](https://img.shields.io/github/license/Jinkogule/Spring-Boot-CRUD?style=for-the-badge)](LICENSE)<br>
-![Status](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO%20-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen?style=for-the-badge)
 </div>
 
 <p align="center">
@@ -9,7 +11,7 @@
  <a href="#-documentação">Documentação</a> • 
  <a href="#-desenvolvimento">Desenvolvimento</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#-autores">Autores</a> •
+ <a href="#-autor">Autor</a> •
  <a href="#-licença">Licença</a>
 </p>
 
@@ -31,23 +33,65 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 ## 🛠 Tecnologias
 
-#### **Back-end**
+#### **Back-end (API)**
 
 -   **[Java 22.0.2](https://www.oracle.com/br/java/technologies/downloads/)**
 -   **[Spring Boot 3.0.0](https://spring.io/projects/spring-boot)**
 -   **[Maven 3.8.6 (Wrapper)](https://maven.apache.org/)**
 
-> Para mais detalhes sobre as configurações do projeto, veja o arquivo [pom.xml](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/pom.xml)
+> Para mais detalhes sobre as configurações do projeto, veja o arquivo [`pom.xml`](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/pom.xml).
 
 #### **Banco de Dados**
 
--   **[MySQL](https://www.mysql.com/)**
+-   **[MySQL 8.4.1](https://www.mysql.com/)**
 
 #### **Utilitários**
 
--   Teste de API: **[Postman](https://www.postman.com/)**
+-   Teste de API: **[Postman](https://www.postman.com/)** -> **[Postman Collection](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/trabalhodac.postman_collection.json)**
 
-## 📝 Autores
+## 📝 Executar o projeto localmente
+
+#### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- **[Git](https://git-scm.com/)**
+- **[Java 22.0.2](https://www.oracle.com/br/java/technologies/downloads/)**
+
+Além disso, é necessário ter um banco de dados MySQL ativo e configurado. Utilize o script a seguir para criar o schema e as tabelas necessárias:
+- **[Script de banco de dados](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/trabalhodac.sql)**
+
+> Para mais detalhes sobre as configurações de conexão ao banco de dados local, veja o arquivo [`application.properties`](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/application.properties).
+
+Além disso, é bom ter um editor para trabalhar com o código como **[VSCode](https://code.visualstudio.com/)**.
+
+#### 🎲 Rodando o Back-End (servidor)
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/Jinkogule/Spring-Boot-CRUD
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd Spring-Boot-CRUD
+
+# Instale as dependências e execute a aplicação usando o Maven Wrapper
+# No Linux/macOS
+$ ./mvnw install
+$ ./mvnw spring-boot:run
+
+# No Windows
+$ mvnw.cmd install
+$ mvnw.cmd spring-boot:run
+```
+
+<div align="center">
+
+[![Postman](https://img.shields.io/badge/Run%20in%20Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/trabalhodac.postman_collection.json)
+
+</div>
+
+###
+
+## 📝 Autor
 
 <img border-radius="50%" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/52849575?v=4" width="100px;" alt=""/>
 
