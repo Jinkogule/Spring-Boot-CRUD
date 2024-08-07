@@ -33,7 +33,7 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 ## 🛠 Tecnologias
 
-### **Back-end (API)**
+#### **Back-end (API)**
 
 -   **[Java 17](https://www.oracle.com/br/java/technologies/downloads/#java17)**
 -   **[Spring Boot 3.0.0](https://spring.io/projects/spring-boot)**
@@ -41,26 +41,26 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 > Para mais detalhes sobre as configurações do projeto, veja o arquivo [`pom.xml`](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/pom.xml).
 
-### **Banco de Dados**
+#### **Banco de Dados**
 
 -   **[MySQL 8.0.31](https://www.mysql.com/)**
 
-### **Utilitários**
+#### **Utilitários**
 
--   Teste de API: **[Postman](https://www.postman.com/)** -> **[Postman Collection](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/trabalhodac.postman_collection.json)**
+-   Teste de API: **[Postman](https://www.postman.com/)** -> **[Postman Collection](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.postman_collection.json)**
 
 ## 📝 Executar o projeto localmente
 
-### Pré-requisitos
+#### **Pré-requisitos**
 
-Antes de começar, é necessário:
+Antes de começar, certifique-se de:
 
-- Instalar o **[Git](https://git-scm.com/)**
-- Instalar o **[MySQL Server 8.0.3](https://dev.mysql.com/downloads/mysql/)** (ou versão compatível)
-- Executar o **[script de banco de dados](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/trabalhodac.sql?raw=true)** para criar o schema e as tabelas necessárias
-- Instalar o **[JDK 17](https://www.oracle.com/br/java/technologies/downloads/#java17)** (ou versão compatível) e certificar-se de configurar a variável `JAVA_HOME` com o caminho correto do JDK
+- Instalar o **[Git](https://git-scm.com/)**.
+- Instalar o **[MySQL Server 8.0.3](https://dev.mysql.com/downloads/mysql/)** (ou versão compatível).
+- Executar o **[script de banco de dados](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.sql)** para criar o schema e as tabelas necessárias.
+- Instalar o **[JDK 17](https://www.oracle.com/br/java/technologies/downloads/#java17)** (ou versão compatível) e configurar a variável JAVA_HOME  `JAVA_HOME` com o caminho correto do JDK.
 
-### 🎲 Rodando o Back-End (servidor)
+#### **Rodando o Back-End (servidor)**
 
 ```bash
 # Clone este repositório
@@ -81,11 +81,9 @@ $ mvnw.cmd spring-boot:run
 
 <div align="center">
 
-[![Postman](https://img.shields.io/badge/Run%20in%20Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/trabalhodac.postman_collection.json?raw=true)
+[![Postman](https://img.shields.io/badge/Teste%20com%20o%20Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.postman_collection.json)
 
 </div>
-
-###
 
 ## 📝 Autor
 
