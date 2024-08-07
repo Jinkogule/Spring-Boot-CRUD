@@ -1,5 +1,7 @@
-create database trabalhodac;
-select * from usuarios;
+CREATE DATABASE trabalhodac;
+
+USE trabalhodac;
+
 CREATE TABLE Usuarios (
     id int,
     login varchar(255),
