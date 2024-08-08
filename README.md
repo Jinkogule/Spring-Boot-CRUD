@@ -51,7 +51,7 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 -   Teste de API: **[Postman](https://www.postman.com/)** -> **[Postman Collection](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.postman_collection.json)**
 
-## 📝 Executar o projeto localmente
+## ⚙️ Executar o projeto localmente
 
 #### **Pré-requisitos**
 
@@ -87,10 +87,13 @@ $ mvnw.cmd spring-boot:run
 
 </div>
 
-## 🛠️ API Requests & Responses
+## 📸 Requisições e Respostas da API
 
-### CRUD envolvendo a tabela Atividades
-<table align="center">
+#### **Visualização das operações CRUD sobre a entidade Atividades**
+<table align="center" width="100%">
+  <tr>
+    <td align="center" colspan="3"><strong>Create</strong></td>
+  </tr>
   <tr>
     <td align="center">
       <img src="/src/main/resources/static/images/screenshots/create_1.png" alt="" title="create_1">
@@ -108,6 +111,12 @@ $ mvnw.cmd spring-boot:run
       <em>Criação do terceiro item</em>
     </td>
   </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" colspan="4"><strong>Read</strong></td>
+  </tr>
   <tr>
     <td align="center">
       <img src="/src/main/resources/static/images/screenshots/read_1.png" alt="" title="read_1">
@@ -117,18 +126,24 @@ $ mvnw.cmd spring-boot:run
     <td align="center">
       <img src="/src/main/resources/static/images/screenshots/read_2.png" alt="" title="read_2">
       <br>
-      <em>Leitura de todos os itens após as criações</em>
+      <em>Leitura de todos os itens após criações</em>
     </td>
     <td align="center">
       <img src="/src/main/resources/static/images/screenshots/read_3.png" alt="" title="read_3">
       <br>
-      <em>Leitura de todos os itens após updates sobre Id=1, Id=2 e Id=3</em>
+      <em>Leitura de todos os itens após updates sobre Id=1 e Id=2</em>
     </td>
     <td align="center">
       <img src="/src/main/resources/static/images/screenshots/read_4.png" alt="" title="read_4">
       <br>
       <em>Leitura de todos os itens após deleções sobre Id=1 e Id=3</em>
     </td>
+  </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" colspan="3"><strong>Update</strong></td>
   </tr>
   <tr>
     <td align="center">
@@ -141,11 +156,12 @@ $ mvnw.cmd spring-boot:run
       <br>
       <em>Atualização sobre Id=2</em>
     </td>
-    <td align="center">
-      <img src="/src/main/resources/static/images/screenshots/update_3.png" alt="" title="update_3">
-      <br>
-      <em>Atualização sobre Id=3</em>
-    </td>
+  </tr>
+</table>
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" colspan="2"><strong>Delete</strong></td>
   </tr>
   <tr>
     <td align="center">
