@@ -35,7 +35,7 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 ## 🛠 Tecnologias
 
-#### **Back-end (API)**
+#### **Back-End (API)**
 
 -   **[Java 17](https://www.oracle.com/br/java/technologies/downloads/#java17)**
 -   **[Spring Boot 3](https://spring.io/projects/spring-boot)**
@@ -53,7 +53,7 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 ## ⚙ Executar o projeto localmente
 
-#### **Pré-requisitos**
+#### **Pré-Requisitos**
 
 Antes de começar, certifique-se de:
 
@@ -89,7 +89,7 @@ $ mvnw.cmd spring-boot:run
 
 ## 📷 Requisições e Respostas da API
 
-#### **Visualização das operações CRUD sobre a entidade Atividades**
+Visualização das Operações CRUD sobre a entidade Atividades:
 <table align="center" width="100%">
   <tr>
     <td align="center" colspan="3"><strong>Create</strong></td>
@@ -177,7 +177,7 @@ $ mvnw.cmd spring-boot:run
   </tr>
 </table>
 
-## 📝 Autor
+## ✒️ Autor
 
 <img border-radius="50%" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/52849575?v=4" width="100px;" alt=""/>
 
