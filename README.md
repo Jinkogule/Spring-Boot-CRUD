@@ -12,7 +12,7 @@
  <a href="#-desenvolvimento">Desenvolvimento</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-executar-o-projeto-localmente">Executar o projeto localmente</a> • 
- <a href="#-api-requests-&-responses">API Requests & Responses</a> • 
+ <a href="#-requisições-e-respostas-da-api">Requisições e Respostas da API</a> • 
  <a href="#-autor">Autor</a> •
  <a href="#-licença">Licença</a>
 </p>
@@ -51,7 +51,7 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 -   Teste de API: **[Postman](https://www.postman.com/)** -> **[Postman Collection](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.postman_collection.json)**
 
-## ⚙️ Executar o projeto localmente
+## ⚙ Executar o projeto localmente
 
 #### **Pré-requisitos**
 
@@ -87,7 +87,7 @@ $ mvnw.cmd spring-boot:run
 
 </div>
 
-## 📸 Requisições e Respostas da API
+## 📷 Requisições e Respostas da API
 
 #### **Visualização das operações CRUD sobre a entidade Atividades**
 <table align="center" width="100%">
