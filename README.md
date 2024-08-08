@@ -93,45 +93,70 @@ $ mvnw.cmd spring-boot:run
 <table align="center">
   <tr>
     <td align="center">
-      <img src="/src/main/resources/static/images/create_1.png" alt="" title="Create_1" width="300px">
+      <img src="/src/main/resources/static/images/screenshots/create_1.png" alt="" title="create_1">
       <br>
-      <em>Primeira criação</em>
+      <em>Criação do primeiro item</em>
     </td>
     <td align="center">
-      <img src="/src/main/resources/static/images/read_1.png" alt="" title="Read_1" width="300px">
+      <img src="/src/main/resources/static/images/screenshots/create_2.png" alt="" title="create_2">
       <br>
-      <em>Leitura do "Id=1"</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="/src/main/resources/static/images/create_2.png" alt="" title="Create_2" width="300px">
-      <br>
-      <em>Segunda criação</em>
+      <em>Criação do segundo item</em>
     </td>
     <td align="center">
-      <img src="/src/main/resources/static/images/read_2.png" alt="" title="Read_2" width="300px">
+      <img src="/src/main/resources/static/images/screenshots/create_3.png" alt="" title="create_3">
       <br>
-      <em>Leitura de todos após segunda criação</em>
+      <em>Criação do terceiro item</em>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="/src/main/resources/static/images/update_1.png" alt="" title="Update_1" width="300px">
+      <img src="/src/main/resources/static/images/screenshots/read_1.png" alt="" title="read_1">
       <br>
-      <em>Atualização do "Id=2"</em>
+      <em>Leitura específica sobre Id=1</em>
     </td>
     <td align="center">
-      <img src="/src/main/resources/static/images/delete_1.png" alt="" title="Delete_1" width="300px">
+      <img src="/src/main/resources/static/images/screenshots/read_2.png" alt="" title="read_2">
       <br>
-      <em>Deleção do "Id=1"</em>
+      <em>Leitura de todos os itens após as criações</em>
+    </td>
+    <td align="center">
+      <img src="/src/main/resources/static/images/screenshots/read_3.png" alt="" title="read_3">
+      <br>
+      <em>Leitura de todos os itens após updates sobre Id=1, Id=2 e Id=3</em>
+    </td>
+    <td align="center">
+      <img src="/src/main/resources/static/images/screenshots/read_4.png" alt="" title="read_4">
+      <br>
+      <em>Leitura de todos os itens após deleções sobre Id=1 e Id=3</em>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="/src/main/resources/static/images/read_3.png" alt="" title="Read_3" width="300px">
+      <img src="/src/main/resources/static/images/screenshots/update_1.png" alt="" title="update_1">
       <br>
-      <em>Leitura de todos após atualização do "Id=2" e deleção do "Id=1"</em>
+      <em>Atualização sobre Id=1</em>
+    </td>
+    <td align="center">
+      <img src="/src/main/resources/static/images/screenshots/update_2.png" alt="" title="update_2">
+      <br>
+      <em>Atualização sobre Id=2</em>
+    </td>
+    <td align="center">
+      <img src="/src/main/resources/static/images/screenshots/update_3.png" alt="" title="update_3">
+      <br>
+      <em>Atualização sobre Id=3</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="/src/main/resources/static/images/screenshots/delete_1.png" alt="" title="delete_1">
+      <br>
+      <em>Deleção sobre Id=1</em>
+    </td>
+    <td align="center">
+      <img src="/src/main/resources/static/images/screenshots/delete_2.png" alt="" title="delete_2">
+      <br>
+      <em>Deleção sobre Id=3</em>
     </td>
   </tr>
 </table>
