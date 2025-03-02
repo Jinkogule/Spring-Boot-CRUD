@@ -21,7 +21,7 @@
 
 ## 💻 Sobre o projeto
 
-O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmico para a disciplina de Desenvolvimento de Aplicações Corporativas. Este projeto utiliza o framework Spring Boot para implementar uma API RESTful que realiza operações CRUD, baseado em um cenário fictício conforme descrito no [enunciado do trabalho](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/Trabalho_em_grupo.pdf).
+O **Spring Boot CRUD** é um sistema desenvolvido como parte de um projeto acadêmico para a disciplina de Desenvolvimento de Aplicações Corporativas. Este projeto utiliza o framework Spring Boot para implementar uma API RESTful que realiza operações CRUD, baseado em um cenário fictício conforme descrito no **[enunciado do trabalho](https://github.com/Jinkogule/Spring-Boot-CRUD/raw/main/src/main/resources/documents/Trabalho_em_grupo.pdf)**.
 
 ## 📋 Documentação
 
@@ -35,25 +35,25 @@ O Spring Boot CRUD é um sistema desenvolvido como parte de um projeto acadêmic
 
 ## 🛠 Tecnologias
 
-#### **Back-End (API)**
+### **Back-End (API)**
 
 -   **[Java 17](https://www.oracle.com/br/java/technologies/downloads/#java17)**
 -   **[Spring Boot 3](https://spring.io/projects/spring-boot)**
 -   **[Maven 3.8.6 (Wrapper)](https://maven.apache.org/)**
 
-> Para mais detalhes sobre as configurações do projeto, veja o arquivo [`pom.xml`](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/pom.xml).
+> Para mais detalhes sobre as configurações do projeto, veja o arquivo **[`pom.xml`](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/pom.xml)**.
 
-#### **Banco de Dados**
+### **Banco de Dados**
 
 -   **[MySQL 8.0.3](https://www.mysql.com/)**
 
-#### **Utilitários**
+### **Utilitários**
 
 -   Teste de API: **[Postman](https://www.postman.com/)** -> **[Postman Collection](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.postman_collection.json)**
 
 ## ⚙ Executar o projeto localmente
 
-#### **Pré-Requisitos**
+### **Pré-Requisitos**
 
 Antes de começar, certifique-se de:
 
@@ -62,7 +62,7 @@ Antes de começar, certifique-se de:
 - Executar o **[script de banco de dados](https://github.com/Jinkogule/Spring-Boot-CRUD/blob/main/src/main/resources/documents/trabalhodac.sql)** para criar o schema e as tabelas necessárias.
 - Instalar o **[JDK 17](https://www.oracle.com/br/java/technologies/downloads/#java17)** (ou versão compatível) e configurar a variável `JAVA_HOME` com o caminho correto do JDK.
 
-#### **Rodando o Back-End (servidor)**
+### **Rodando o Back-End (servidor)**
 
 ```bash
 # Clone este repositório
@@ -179,11 +179,22 @@ Visualização das Operações CRUD sobre a entidade Atividades:
 
 ## ✒ Autor
 
-<img border-radius="50%" style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/52849575?v=4" width="100px;" alt=""/>
-
-[![Linkedin](https://img.shields.io/badge/-Lucas%20Pimenta-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/lucas-pimenta-0663671b1/)](https://www.linkedin.com/in/lucas-pimenta-0663671b1/) 
-[![Gmail](https://img.shields.io/badge/-lucaspimenta21@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:lucaspimenta21@gmail.com)](mailto:lucaspimenta21@gmail.com)
+<table>
+  <tr>
+    <td align="center">
+      Lucas Pimenta
+      <br>
+      <a href="https://github.com/Jinkogule">
+        <img src="https://avatars.githubusercontent.com/u/52849575?v=4" width="100px;" alt="Lucas Pimenta"/>
+      </a>
+      <br>
+      <a href="https://github.com/Jinkogule">
+        <img src="https://img.shields.io/badge/-Github-black?style=flat-square&logo=Github&logoColor=white">
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## 📝 Licença
 
-Este projeto está sob a licença [MIT](./LICENSE).
+Este projeto está sob a licença **[MIT](./LICENSE)**.
